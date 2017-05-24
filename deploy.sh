@@ -24,6 +24,7 @@ fi
 msg "Removing the old website"
 pushd public
 git rm -rf *
+git checkout HEAD -- CNAME
 popd
 
 msg "Building the website"
